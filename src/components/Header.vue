@@ -1,6 +1,6 @@
 <template>
   <header class="container d-flex-j-between">
-    <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+    <a href="#"><img src="../assets/img/dc-logo.png" alt="Logo DC" /></a>
 
     <nav>
       <ul>
@@ -39,14 +39,13 @@ header {
     height: 100%;
     ul {
       height: 100%;
-      display: inline-block;
+      display: flex;
+      align-items: center;
       li {
         display: inline-block;
-        line-height: 130px;
         a {
-          line-height: 55px;
           color: $secondary_color;
-          padding: 0 10px;
+          padding: 52px 10px;
           &:hover {
             color: $main_color;
             border-bottom: 5px solid $main_color;
