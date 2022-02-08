@@ -1,9 +1,7 @@
 <template>
   <footer>
-    <div class="container">
-      <FooterTop />
-      <FooterBottom />
-    </div>
+    <FooterTop />
+    <FooterBottom />
   </footer>
 </template>
 
@@ -22,8 +20,6 @@ export default {
 
 <style>
 footer {
-  background-image: url("../assets/img/footer-bg.jpg");
   color: white;
-  padding: 30px 0;
 }
 </style>
