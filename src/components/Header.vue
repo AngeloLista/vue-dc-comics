@@ -18,8 +18,8 @@ export default {
   data() {
     return {
       links: [
-        { text: "CHARACTERS", url: "#", active: true },
-        { text: "COMICS", url: "#", active: false },
+        { text: "CHARACTERS", url: "#", active: false },
+        { text: "COMICS", url: "#", active: true },
         { text: "MOVIES", url: "#", active: false },
         { text: "TV", url: "#", active: false },
         { text: "GAMES", url: "#", active: false },
