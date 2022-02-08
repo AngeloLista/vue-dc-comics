@@ -2,47 +2,14 @@
   <section id="footer-top">
     <div class="d-flex justyify-space-between container">
       <nav>
-        <section>
-          <h3>DC COMICS</h3>
+        <section v-for="(nav_section, index) in nav_sections" :key="index">
+          <!-- Titolo -->
+          <h3>{{ nav_section.title }}</h3>
+          <!-- Links -->
           <ul>
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-          <h3>SHOP</h3>
-          <ul>
-            <li><a href="#">Shop DC</a></li>
-            <li><a href="#">Shop DC Collectibles</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>DC</h3>
-          <ul>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy policy (New)</a></li>
-            <li><a href="#">Ad Choices</a></li>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Subscriptions</a></li>
-            <li><a href="#">Talent Workshops</a></li>
-            <li><a href="#">CPSC Certificates</a></li>
-            <li><a href="#">Ratings</a></li>
-            <li><a href="#">Shop Help</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>SITES</h3>
-          <ul>
-            <li><a href="#">DC</a></li>
-            <li><a href="#">MAD Magazine</a></li>
-            <li><a href="#">DC Kids</a></li>
-            <li><a href="#">DC Universe</a></li>
-            <li><a href="#">DC Power Visa</a></li>
+            <li v-for="(text, index) in nav_section.texts" :key="index">
+              <a href="#">{{ text }}</a>
+            </li>
           </ul>
         </section>
       </nav>
@@ -54,6 +21,51 @@
 <script>
 export default {
   name: "FooterTop",
+  data() {
+    return {
+      nav_sections: [
+        {
+          title: "DC COMICS",
+          texts: [
+            "Characters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Videos",
+            "News",
+          ],
+        },
+        { title: "DC", texts: ["Shop DC", "Shop DC Collectibles"] },
+        {
+          title: "SHOP",
+          texts: [
+            "Terms of Use",
+            "Privacy policy (New)",
+            "Ad Choices",
+            "Advertising",
+            "Jobs",
+            "Subscriptions",
+            "Talent Workshops",
+            "CPSC Certificates",
+            "Ratings",
+            "Shop Help",
+            "Contact Us",
+          ],
+        },
+        {
+          title: "SITES",
+          texts: [
+            "DC",
+            "MAD Magazine",
+            "DC Kids",
+            "DC Universe",
+            "DC Power Visa",
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 
