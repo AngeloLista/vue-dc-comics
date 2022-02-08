@@ -4,7 +4,7 @@
 
     <nav>
       <ul>
-        <li><a href="#">CHARACTERS</a></li>
+        <li><a class="active" href="#">CHARACTERS</a></li>
         <li><a href="#">COMICS</a></li>
         <li><a href="#">MOVIES</a></li>
         <li><a href="#">TV</a></li>
@@ -22,6 +22,22 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      links: [
+        { text: "CHARACTERS", url: "#", active: true },
+        { text: "COMICS", url: "#", active: false },
+        { text: "MOVIES", url: "#", active: false },
+        { text: "TV", url: "#", active: false },
+        { text: "GAMES", url: "#", active: false },
+        { text: "COLLECTIBLES", url: "#", active: false },
+        { text: "VIDEOS", url: "#", active: false },
+        { text: "FANS", url: "#", active: false },
+        { text: "NEWS", url: "#", active: false },
+        { text: "SHOP", url: "#", active: false },
+      ],
+    };
+  },
 };
 </script>
 
@@ -47,6 +63,10 @@ header {
           color: $secondary_color;
           padding: 52px 10px;
           &:hover {
+            color: $main_color;
+            border-bottom: 5px solid $main_color;
+          }
+          &.active {
             color: $main_color;
             border-bottom: 5px solid $main_color;
           }
