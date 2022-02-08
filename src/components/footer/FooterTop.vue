@@ -36,9 +36,9 @@ export default {
             "News",
           ],
         },
-        { title: "DC", texts: ["Shop DC", "Shop DC Collectibles"] },
+        { title: "SHOP", texts: ["Shop DC", "Shop DC Collectibles"] },
         {
-          title: "SHOP",
+          title: "DC",
           texts: [
             "Terms of Use",
             "Privacy policy (New)",
@@ -82,7 +82,6 @@ export default {
     section {
       width: calc(100% / 3);
       padding-right: 50px;
-      display: inline-block;
       h3 {
         margin: 15px 0;
       }
