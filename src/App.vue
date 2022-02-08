@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Header
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <style lang="scss">
-  .container {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
+@import "./assets/sass/style.scss";
 </style>

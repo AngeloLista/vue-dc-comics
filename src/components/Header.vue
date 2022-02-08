@@ -1,40 +1,42 @@
 <template>
-    <header>
-        <div class="container d-flex-j-between">
-            <figure>
-                <img src="../assets/dc-logo.png" alt="DC logo">
-            </figure>
+  <header>
+    <div class="container d-flex-j-between">
+      <figure>
+        <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+      </figure>
 
-            <ul>
-                <li><a href="#">PROVA</a></li>
-                <li><a href="#">PROVA</a></li>
-                <li><a href="#">PROVA</a></li>
-                <li><a href="#">PROVA</a></li>
-                <li><a href="#">PROVA</a></li>
-            </ul>
-        </div>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="#">PROVA</a></li>
+          <li><a href="#">PROVA</a></li>
+          <li><a href="#">PROVA</a></li>
+          <li><a href="#">PROVA</a></li>
+          <li><a href="#">PROVA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
-    name: 'Header',
-}
+  name: "Header",
+};
 </script>
 
-<style>
-    figure {
-        display: inline-block;
-    }
+<style lang="scss" scoped>
+figure {
+  display: inline-block;
+}
 
-    .d-flex-j-between {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.d-flex-j-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    ul,
-    ul li {
-        display: inline-block;
-    }
+ul,
+ul li {
+  display: inline-block;
+}
 </style>
