@@ -1,33 +1,39 @@
 <template>
   <main>
     <Jumbotron />
-    <div class="container">
-      <p>Content goes here</p>
+    <div class="container" id="products">
+      <ProductCard />
     </div>
   </main>
 </template>
 
 <script>
 import Jumbotron from "./Jumbotron.vue";
+import ProductCard from "./ProductCard.vue";
+
 export default {
   name: "Main",
   components: {
     Jumbotron,
+    ProductCard,
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/sass/_vars.scss";
 
 main {
   background-color: $secondary_color;
-
   p {
     color: white;
     line-height: 130px;
-    font-weight: 700;
     font-size: 1.5rem;
+  }
+  #products {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>
