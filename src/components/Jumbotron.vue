@@ -8,7 +8,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .jumbotron {
   background-image: url("../assets/img/jumbotron.jpg");
   background-repeat: no-repeat;
