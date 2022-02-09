@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Jumbotron />
     <div class="container">
       <p>Content goes here</p>
     </div>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+import Jumbotron from "./Jumbotron.vue";
 export default {
   name: "Main",
+  components: {
+    Jumbotron,
+  },
 };
 </script>
 
@@ -17,7 +22,7 @@ export default {
 
 main {
   background-color: $secondary_color;
-  height: 130px;
+
   p {
     color: white;
     line-height: 130px;

@@ -45,6 +45,7 @@ header {
   right: 0;
   left: 0;
   background-color: white;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
   font-weight: 700;
   height: 130px;
