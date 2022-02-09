@@ -1,13 +1,14 @@
 <template>
   <div class="card">
     <div class="card-thumbnail"></div>
-    <span>ACTION COMICS</span>
+    <span>{{ product.series }}</span>
   </div>
 </template>
 
 <script>
 export default {
   name: "ProductCard",
+  props: ["product"],
 };
 </script>
 
