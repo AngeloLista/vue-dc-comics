@@ -1,14 +1,16 @@
 <template>
-  <header class="container d-flex-j-between">
-    <a href="#"><img src="../assets/img/dc-logo.png" alt="Logo DC" /></a>
+  <header>
+    <div class="container d-flex-j-between h-130">
+      <a href="#"><img src="../assets/img/dc-logo.png" alt="Logo DC" /></a>
 
-    <nav>
-      <ul>
-        <li v-for="(link, index) in links" :key="index">
-          <a :class="{ active: link.active }" href="#">{{ link.text }}</a>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li v-for="(link, index) in links" :key="index">
+            <a :class="{ active: link.active }" href="#">{{ link.text }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -38,6 +40,11 @@ export default {
 @import "../assets/sass/_vars.scss";
 
 header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
   font-size: 0.8rem;
   font-weight: 700;
   height: 130px;
@@ -56,6 +63,7 @@ header {
           color: $secondary_color;
           padding: 52px 10px;
           &:hover {
+            transition: ease-in-out 0.1s;
             color: $main_color;
             border-bottom: 5px solid $main_color;
           }
@@ -74,4 +82,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-</style>s
+.h-130 {
+  height: 130px;
+}
+</style>

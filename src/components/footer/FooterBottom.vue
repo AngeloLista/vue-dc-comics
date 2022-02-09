@@ -14,22 +14,30 @@
           </li>
           <li>
             <a href="#"
-              ><img src="../../assets/img/footer-twitter.png" alt=""
+              ><img
+                src="../../assets/img/footer-twitter.png"
+                alt="Twitter Logo"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="../../assets/img/footer-youtube.png" alt=""
+              ><img
+                src="../../assets/img/footer-youtube.png"
+                alt="YouTube Logo"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="../../assets/img/footer-pinterest.png" alt=""
+              ><img
+                src="../../assets/img/footer-pinterest.png"
+                alt="Pinterest Logo"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="../../assets/img/footer-periscope.png" alt=""
+              ><img
+                src="../../assets/img/footer-periscope.png"
+                alt="Periscope Logo"
             /></a>
           </li>
         </ul>
@@ -57,6 +65,7 @@ export default {
       padding: 15px;
       border: 3px solid $main_color;
       &:hover {
+        transition: 0.7s;
         background-color: $main_color;
       }
     }
@@ -77,6 +86,7 @@ export default {
         margin: 0 6px;
         &:hover {
           transform: scale(1.1);
+          filter: brightness(1.75);
         }
       }
     }
