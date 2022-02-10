@@ -10,8 +10,8 @@
         :key="index"
         :product="product"
       />
+      <div id="load-more">load more</div>
     </div>
-    <div id="load-more">load more</div>
   </main>
 </template>
 
@@ -123,10 +123,8 @@ export default {
 
 main {
   background-color: $secondary_color;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   #load-more {
+    display: inline-block;
     padding: 10px 15px;
     background-color: $main_color;
     text-transform: uppercase;
