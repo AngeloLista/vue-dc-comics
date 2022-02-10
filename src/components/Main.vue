@@ -11,6 +11,7 @@
         :product="product"
       />
     </div>
+    <div id="load-more">load more</div>
   </main>
 </template>
 
@@ -122,6 +123,22 @@ export default {
 
 main {
   background-color: $secondary_color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  #load-more {
+    padding: 10px 15px;
+    background-color: $main_color;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 15px auto;
+    cursor: pointer;
+    &:active {
+      background-color: #016bce;
+    }
+  }
   .title {
     color: white;
     margin-top: -1.6rem;
