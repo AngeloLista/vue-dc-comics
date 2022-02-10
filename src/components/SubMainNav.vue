@@ -55,7 +55,7 @@ nav {
   padding: 30px 0;
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     li {
       display: flex;
